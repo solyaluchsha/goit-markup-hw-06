@@ -151,8 +151,7 @@ img {
     color: #2e2f42;
 }
 
-.mob-menu-link:hover,
-.mob-menu-link:focus {
+.current {
     color: #404bbf;
 }
 
@@ -205,8 +204,8 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    max-width: 1440px;
-    padding: 72px 52px;
+    max-width: 320px;
+    padding: 72px 0;
     margin: 0 auto;
 }
 
@@ -451,13 +450,15 @@ img {
 
 .footer-description {
     margin-bottom: 72px;
+    width: 288px;
 }
 
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
     color: #F4F4FD;
-    width: 264px;
+    width: 288px;
+    padding: 0 16px;
 }
 
 .logo-footer {
@@ -466,6 +467,7 @@ img {
     width: 100%; 
     display: flex; 
     justify-content: center; 
+    padding: 0;
 }
 
 .logo-studio-footer {
@@ -522,10 +524,10 @@ img {
 
 .footer-social-media {
     width: 100%;
-    margin-bottom: 72px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 72px;
 } 
 
 .footer-form {
@@ -538,7 +540,7 @@ img {
 .footer-input {
     border: 1px solid #fff;
     border-radius: 4px;
-    width: 264px;
+    width: 288px;
     height: 40px;
     background-color: transparent;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -895,14 +897,10 @@ img {
 
 /*MAIN SECTION*/
 
-    .main-section-container {
-        width: 496px;
-        margin: 0 auto;
-    }
-
     .main-section {
-        padding: 112px 136px;
+        padding: 112px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img-tab.jpg);
+        max-width: 768px;
     }
 
         @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -956,19 +954,29 @@ img {
     .footer-container {
         padding-left: 108px;
         padding-right: 164px;
+        gap: 0 24px;
     }
 
     .footer-description {
-        margin-right: 24px;
+        margin-right: 0;
+        width: 264px;
     }
 
     .logo-footer {
         display: block;
+        margin-right: 0;
+        width: 264px;
+    }
+
+    .footer-text {
+        padding: 0;
+        width: 264px;
     }
 
     .footer-social-media {
         width: 208px;
         align-items: start;
+        margin-bottom: 0;
     }
 
     .footer-subscribe {
@@ -977,6 +985,10 @@ img {
 
     .footer-form {
         gap: 24px;
+    }
+    
+    .footer-input {
+        width: 264px;
     }
 
     .modal {
@@ -1025,6 +1037,7 @@ img {
 
 .main-section {
     padding: 188px 0;
+    max-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img.jpg);
 }
 
@@ -1089,6 +1102,9 @@ img {
     }
 
 /*FOOTER*/
+    .footer-container {
+        gap: 0;
+    }
 
     .footer-description {
         margin-right: 120px;
@@ -1097,10 +1113,11 @@ img {
 
     .footer-social-media {
         margin-right: 80px;
-        margin-bottom: 0;
+    
     }
 
     .footer-input {
         opacity: 1;
     }
+
 }
